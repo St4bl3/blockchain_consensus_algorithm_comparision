@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+<h2>Welcome to the Blockchain Consensus Algorithms Project</h2>
+<p>Select an algorithm to explore:</p>
+<ul>
+  <li><a href="{{ url_for('pow_page') }}">Proof of Work (PoW)</a></li>
+  <li><a href="{{ url_for('pos_page') }}">Proof of Stake (PoS)</a></li>
+  <li>
+    <a href="{{ url_for('dpos_page') }}">Delegated Proof of Stake (DPoS)</a>
+  </li>
+  <li><a href="{{ url_for('poa_page') }}">Proof of Authority (PoA)</a></li>
+  <li><a href="{{ url_for('poc_page') }}">Proof of Capacity (PoC)</a></li>
+  <li><a href="{{ url_for('pob_page') }}">Proof of Burn (PoB)</a></li>
+</ul>
+{% endblock %}
